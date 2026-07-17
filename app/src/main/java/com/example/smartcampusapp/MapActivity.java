@@ -3,7 +3,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.util.Log;
-
+import com.google.firebase.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -99,6 +101,20 @@ public class MapActivity extends AppCompatActivity
 
                             String reporter =
                                     document.getString("reporter");
+                            Timestamp timestamp =
+                                    document.getTimestamp("timestamp");
+
+                            String dateTime = "Date unavailable";
+
+                            if (timestamp != null) {
+                                SimpleDateFormat dateFormat =
+                                        new SimpleDateFormat(
+                                                "dd MMM yyyy, hh:mm a",
+                                                Locale.getDefault()
+                                        );
+
+                                dateTime = dateFormat.format(timestamp.toDate());
+                            }
 
                             if (latitude != null && longitude != null) {
 
@@ -108,7 +124,8 @@ public class MapActivity extends AppCompatActivity
                                 String markerInfo =
                                         locationName
                                                 + "\nDescription: " + description
-                                                + "\nReported by: " + reporter;
+                                                + "\nReported by: " + reporter
+                                                + "\nReported on: " + dateTime;
 
                                 googleMap.addMarker(
                                         new MarkerOptions()
