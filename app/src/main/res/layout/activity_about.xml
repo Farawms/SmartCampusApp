@@ -53,12 +53,16 @@
             android:textSize="15sp" />
 
         <!-- Development team section -->
+        <!-- Development team section -->
         <LinearLayout
+            android:id="@+id/cardDevelopmentTeam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:background="#FFFFFF"
+            android:clickable="true"
             android:elevation="4dp"
+            android:focusable="true"
             android:orientation="vertical"
             android:padding="18dp">
 
@@ -72,9 +76,12 @@
 
             <!-- Member 1 -->
             <LinearLayout
+                android:id="@+id/cardMember1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -121,9 +128,12 @@
 
             <!-- Member 2 -->
             <LinearLayout
+                android:id="@+id/cardMember2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -170,9 +180,12 @@
 
             <!-- Member 3 -->
             <LinearLayout
+                android:id="@+id/cardMember3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -219,11 +232,14 @@
 
             <!-- Member 4 -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+            android:id="@+id/cardMember4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="72dp"
@@ -268,9 +284,12 @@
 
             <!-- Member 5 -->
             <LinearLayout
+                android:id="@+id/cardMember5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
     <style
         name="Theme.SmartCampusApp"
-        parent="Theme.AppCompat.DayNight.NoActionBar">
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
         <item name="colorPrimary">#123A5A</item>
-        <item name="colorPrimaryVariant">#123A5A</item>
+        <item name="colorPrimaryVariant">#0B2D4D</item>
         <item name="colorOnPrimary">#FFFFFF</item>
 
+        <item name="colorSecondary">#2F80ED</item>
+        <item name="colorSecondaryVariant">#1F5FA8</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
         <item name="android:windowIsTranslucent">false</item>
-        <item name="android:windowBackground">#FFFFFF</item>
-        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:windowBackground">#F4F7FB</item>
+        <item name="android:colorBackground">#F4F7FB</item>
 
     </style>
 
